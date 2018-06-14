@@ -16,7 +16,8 @@ You will be building out an application that allows a user to purchase movie tic
 
 ### The API
 
-The backend for this challenge can be found at `https://evening-plateau-54365.herokuapp.com/`
+The backend for this challenge can be found at
+`https://tick-et.herokuapp.com`
 
 There are two API endpoints you will use, one to fetch all of the data associated with your assigned theatre and the other to create tickets in the database.
 
@@ -27,7 +28,7 @@ There are two API endpoints you will use, one to fetch all of the data associate
 
 Use your assigned id to get the data for all of the showings at your theatre.
 
-GET `https://evening-plateau-54365.herokuapp.com/theatres/:id`
+GET `https://tick-et.herokuapp.com/theatres/:id`
 
 Example response:
 ```json
@@ -158,7 +159,7 @@ The number of tickets remaining for a showing can be determined by subtracting t
 
 To create a new ticket it must belong to a showing. The body of the request must contain a key called  `showing_id`
 
-POST `https://evening-plateau-54365.herokuapp.com/tickets`
+POST `https://tick-et.herokuapp.com/tickets`
 
 ```
 Required Headers
@@ -226,4 +227,3 @@ The cards that represent a movie showing should be appended to the div with the 
 ### Considerations
 
 You are free to solve this in any way you choose. It is not required that you have ES6 classes or use Object Orientation. We would recommend beginning with a straightforward functional implementation and refactoring to objects as needed.
-
